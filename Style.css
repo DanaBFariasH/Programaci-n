@@ -1,0 +1,132 @@
+/* Estilo global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    color: #333;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+.equipo1, .equipo2 {
+    border-radius: 20px;
+    padding: 40px;
+    width: 380px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.equipo1:hover, .equipo2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para Tribu Roja */
+.equipo1 {
+    background-color: #FF0000; /* Fondo rojo sólido */
+    color: white;
+}
+
+.equipo1 h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-shadow: none; /* Sin sombra para texto */
+}
+
+.equipo1 input {
+    border: none;
+    padding: 15px;
+    margin: 15px 0;
+    width: 85%;
+    border-radius: 12px;
+    font-size: 1.1em;
+    background-color: #ffe6e6; /* Fondo claro */
+    color: #333;
+    box-shadow: none; /* Sin sombra interna */
+    transition: box-shadow 0.3s ease;
+}
+
+.equipo1 input:focus {
+    box-shadow: none; /* Sin sombra adicional */
+    outline: none;
+}
+
+/* Estilo para Tribu Negra */
+.equipo2 {
+    background-color: #000000; /* Fondo negro sólido */
+    color: white;
+}
+
+.equipo2 h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-shadow: none; /* Sin sombra para texto */
+}
+
+.equipo2 input {
+    border: none;
+    padding: 15px;
+    margin: 15px 0;
+    width: 85%;
+    border-radius: 12px;
+    font-size: 1.1em;
+    background-color: #e6e6e6; /* Fondo claro */
+    color: #333;
+    box-shadow: none; /* Sin sombra interna */
+    transition: box-shadow 0.3s ease;
+}
+
+.equipo2 input:focus {
+    box-shadow: none; /* Sin sombra adicional */
+    outline: none;
+}
+
+/* Botón de mostrar resultado */
+button {
+    background-color: #333333; /* Fondo negro */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Esquinas más redondeadas */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+}
+
+button:hover {
+    background-color: #555555; /* Fondo gris oscuro al pasar el ratón */
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+button:active {
+    transform: translateY(2px); /* Leve bajada al hacer clic */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más reducida */
+}
+
+/* Resultado */
+#Resultado {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 40px;
+    color: #333;
+}
