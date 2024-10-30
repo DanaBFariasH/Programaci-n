@@ -8,13 +8,13 @@ let equipo2: punto={
     punto:0
 }
 
-const handball_tr = document.getElementById('handball_Tr') as HTMLInputElement;
+const handball_tr = document.getElementById('handball_tr') as HTMLInputElement;
 const resistencia_tr = document.getElementById('resistencia_Tr') as HTMLInputElement;
 const ajedrez_tr = document.getElementById('ajedrez_tr') as HTMLInputElement;
 
-const handball_tn = document.getElementById('handball_TN ') as HTMLInputElement;
-const resistencia_tn = document.getElementById('esistencia_TN') as HTMLInputElement;
-const ajedrez_tn = document.getElementById('ajedrez_TN ') as HTMLInputElement;
+const handball_tn = document.getElementById('handball_tn ') as HTMLInputElement;
+const resistencia_tn = document.getElementById('esistencia_tn') as HTMLInputElement;
+const ajedrez_tn = document.getElementById('ajedrez_tn ') as HTMLInputElement;
 
 const Puntosequipo1 = document.getElementById('PuntosTribuRoja') as HTMLElement;
 const PuntosTribuNegra = document.getElementById('PuntosTribuNegra') as HTMLElement;
@@ -39,11 +39,15 @@ function AgregarPuntos(tribu : string): void {
 
     }
 }
-function MostrarResultados(tribu : string): void {
-    let resultado= '';
-    if(tribu == "equipo2"){
-        equipo2.punto -= equipo2.punto;
-        PuntosTribuNegra.innerText ='';
-        }
-}
+function MostrarResultado(): void{
+    let Resultado = '';
+    if (equipo1.punto > equipo2.punto){
+      Resultado = 'La Tribu Roja es gano con' + equipo1.punto + 'puntos';
+    } else if   (equipo1.punto < equipo2.punto){
+        Resultado = 'La Tribu Negra gano con' + equipo2.punto + 'puntos';
+    } else{
+        Resultado = 'Ambos equipos estan empatados con' + equipo1.punto + 'puntos';
+    }
+    Resultado.innerText= Resultado; 
+  }
 
