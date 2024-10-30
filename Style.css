@@ -1,4 +1,3 @@
-/* Estilo global */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f7f7f7;
@@ -38,16 +37,15 @@ h1 {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para Tribu Roja */
 .equipo1 {
-    background-color: #FF0000; /* Fondo rojo sólido */
+    background-color: #FF0000; 
     color: white;
 }
 
 .equipo1 h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    text-shadow: none; /* Sin sombra para texto */
+    text-shadow: none; 
 }
 
 .equipo1 input {
@@ -57,27 +55,24 @@ h1 {
     width: 85%;
     border-radius: 12px;
     font-size: 1.1em;
-    background-color: #ffe6e6; /* Fondo claro */
     color: #333;
-    box-shadow: none; /* Sin sombra interna */
     transition: box-shadow 0.3s ease;
 }
 
 .equipo1 input:focus {
-    box-shadow: none; /* Sin sombra adicional */
+    box-shadow: none; 
     outline: none;
 }
 
-/* Estilo para Tribu Negra */
 .equipo2 {
-    background-color: #000000; /* Fondo negro sólido */
+    background-color: #000000; 
     color: white;
 }
 
 .equipo2 h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    text-shadow: none; /* Sin sombra para texto */
+    text-shadow: none; 
 }
 
 .equipo2 input {
@@ -87,46 +82,45 @@ h1 {
     width: 85%;
     border-radius: 12px;
     font-size: 1.1em;
-    background-color: #e6e6e6; /* Fondo claro */
+    background-color: #e6e6e6; 
     color: #333;
-    box-shadow: none; /* Sin sombra interna */
+    box-shadow: none; 
     transition: box-shadow 0.3s ease;
 }
 
 .equipo2 input:focus {
-    box-shadow: none; /* Sin sombra adicional */
+    box-shadow: none; 
     outline: none;
 }
 
-/* Botón de mostrar resultado */
 button {
-    background-color: #333333; /* Fondo negro */
+    background-color: #333333; 
     color: white;
     padding: 15px 30px;
     border: none;
-    border-radius: 25px; /* Esquinas más redondeadas */
+    border-radius: 25px; 
     font-size: 1.1em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 button:hover {
-    background-color: #555555; /* Fondo gris oscuro al pasar el ratón */
-    transform: translateY(-5px); /* Efecto de elevación */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    background-color: #555555; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
 }
 
 button:active {
-    transform: translateY(2px); /* Leve bajada al hacer clic */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más reducida */
+    transform: translateY(2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
-/* Resultado */
 #Resultado {
     text-align: center;
     font-size: 1.8em;
     margin-top: 40px;
     color: #333;
 }
+

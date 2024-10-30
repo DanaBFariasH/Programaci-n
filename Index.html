@@ -8,29 +8,40 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1>Registro de puntos de las Intertribus</h1>
+    <h1>Puntos Intertribus</h1>
     <div id="app"> 
-        <div class="equipo1">
-            <h2>Tribu Roja</h2>
-            <input type="number" id="handball_tr" placeholder="Handball">
-            <input type="number" id="resistencia_tr" placeholder="Resistencia">
-            <input type="number" id="ajedrez_tr" placeholder="Ajedrez">
-            <button onclick="AgregarPuntos('Tribu Roja')"> Agregar Puntos </button>
-        </div>
-         <div class="equipo2">
+          <div class="equipo2">
             <h2>Tribu Negra</h2>
-            <input type="number" id="handball_tn" placeholder="Handball">
-            <input type="number" id="resistencia_tn" placeholder="Resistencia">
-            <input type="number" id="ajedrez_tn" placeholder="Ajedrez">
+            <h3>Handball</h3>
+            <input type="number" id="Handball_tn" placeholder="Handball">
+            <h3>Resistencia</h3>
+            <input type="number" id="Resistencia_tn" placeholder="Resistencia">
+            <h3>Ajedrez</h3>
+            <input type="number" id="Ajedrez_tn" placeholder="Ajedrez">
+            <br>
+            <br>
             <button onclick="AgregarPuntos('Tribu Negra')"> Agregar Puntos </button>
         </div>
+        <div class="equipo1">
+            <h2>Tribu Roja</h2>
+            <h3>Handball</h3>
+            <input type="number" id="Handball_tr" placeholder="Handball">
+            <h3>Resistencia</h3>
+            <input type="number" id="Resistencia_tr" placeholder="Resistencia">
+            <h3>Ajedrez</h3>
+            <input type="number" id="Ajedrez_tr" placeholder="Ajedrez">
+            <br>
+            <br>
+            <button onclick="AgregarPuntos('Tribu Roja')"> Agregar Puntos </button>
+        </div>
+       
         <div>
             <button onclick="MostrarResultados()">Mostrar Resultados</button>
             <p id="Resultado"></p>
         </div>
 
     </div>
-    <script src=""></script>
+    <script src="ContadordePuntos.js"></script>
 
 </body>
 </html>
